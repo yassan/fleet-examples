@@ -3,6 +3,8 @@
 This repository contains examples of how to use Fleet using different approaches.
 The repo is broken up into two different sections: Single cluster and Multi Cluster.
 
+[![CI](https://github.com/rancher/fleet-examples/actions/workflows/ci.yml/badge.svg)](https://github.com/rancher/fleet-examples/actions/workflows/ci.yml)
+
 ## Single Cluster Examples
 
 All examples will deploy content to clusters with no per-cluster customizations. This is a good starting point to
@@ -10,10 +12,10 @@ understand the basics of structuring git repos for Fleet.
 
 | Example | Description |
 |-------------|-------------|
-| [manifests](single-cluster/manifests/) | An example using raw Kubernetes YAML and customizing it per target cluster |
-| [helm](single-cluster/helm/) | An example using Helm and customizing it per target cluster |
+| [manifests](single-cluster/manifests/) | An example using raw Kubernetes YAML |
+| [helm](single-cluster/helm/) | An example using Helm |
 | [helm-multi-chart](single-cluster/helm-multi-chart/) | An example deploying multiple charts from a single repo |
-| [kustomize](single-cluster/kustomize/) | An example using Kustomize and customizing it per target cluster |
+| [kustomize](single-cluster/kustomize/) | An example using Kustomize |
 | [helm-kustomize](single-cluster/helm-kustomize/) | An example using Kustomize to modify a third party Helm chart |
 
 ## Multi-Cluster Examples
